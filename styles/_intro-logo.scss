@@ -1,0 +1,14 @@
+.intro-logo {
+    font-size: 2rem;
+    font-weight: 400;
+    /* @include screen-size(1440px) {
+        margin: 44px 0 45px 132px;
+    } */
+    @include screen-size(1024px) {
+        /* margin: 13px 0 13px 42px; */
+        font-size: 1.4rem;
+    }
+    /* @include screen-size(768px) {
+        margin: 8px 0 8px 24px;
+    }*/
+}

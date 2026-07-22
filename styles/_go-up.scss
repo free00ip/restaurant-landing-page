@@ -1,0 +1,22 @@
+.go-up {
+    display: block;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    background-color: #FFAC1C;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 19px;
+    &:hover {
+        transform: scale(1.5);
+        transition-duration: 0.3s;
+    }
+    i {
+        font-size: 33px;
+        text-align: center;
+        line-height: 70px;
+    }
+    @include screen-size(1024px) {
+        bottom: 20px;
+    }
+}

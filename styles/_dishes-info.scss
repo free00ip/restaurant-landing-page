@@ -1,0 +1,47 @@
+.dishes-info {
+    max-width: 360px;
+    margin-top: 35px;
+    text-align: left;
+    &__name {
+        font-size: $big-font;
+        font-weight: 400;
+    }
+    &__about {
+        margin: 15px 0;
+        font-size: 0.72rem;
+        font-weight: $primary-font-weight;
+        color: $secondary-text-color;
+    }
+    &__price {
+        font-size: 0.72rem;
+        font-weight: $secondary-font-weight;
+    }
+    @include screen-size(1024px) {
+        max-width: 252px;
+        margin-top: 15px;
+        &__name {
+            font-size: $medium-font;
+        }
+        &__about {
+            font-size: 0.6rem;
+        }
+        &__price {
+            font-size: 0.6rem;
+        }
+    }
+    @include screen-size(768px) {
+        max-width: 348px;
+        margin-top: 0;
+        margin-left: 24px;
+        &__name {
+            font-size: $medium-font;
+        }
+        &__about {
+            margin: 20px 0;
+            font-size: $tiny-font;
+        }
+        &__price {
+            font-size: $tiny-font;
+        }
+    }
+}

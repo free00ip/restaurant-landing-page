@@ -1,0 +1,86 @@
+           .dishes-card {
+               max-width: calc((100% - 2 * 48px) / 3);
+               position: relative;
+               &:hover {
+                   background-color: rgba(255, 166, 13, 0.3);
+                   border-radius: 10px;
+                   transform: scale(1.1);
+                   transition-duration: 0.3s;
+                   transition-delay: 0.08;
+                   transition-timing-function: linear;
+               }
+               &:not(:last-child) {
+                   margin-right: 48px;
+               }
+               &--red::before {
+                   @include dish-sticker;
+                   content: "HOT!";
+                   background-color: #D33B3B;
+               }
+               &--green::before {
+                   @include dish-sticker;
+                   content: "NEW!";
+                   background-color: #B3E151;
+               }
+               &--yellow::before {
+                   @include dish-sticker;
+                   content: "HIT!";
+                   background-color: #E5A434;
+               }
+               @include screen-size(1024px) {
+                   max-width: calc((100% - 2 * 92px) / 3);
+                   &:not(:last-child) {
+                       margin-right: 92px;
+                   }
+                   &--red::before {
+                       @include dish-sticker-change (0.48rem, 46px, -23px)
+                   }
+                   &--green::before {
+                       @include dish-sticker-change (0.48rem, 46px, -23px)
+                   }
+                   &--yellow::before {
+                       @include dish-sticker-change (0.48rem, 46px, -23px)
+                   }
+               }
+               @include screen-size(768px) {
+                   display: flex;
+                   max-width: 692px;
+                   align-items: center;
+                   margin-left: 28px;
+                   &:not(:last-child) {
+                       margin-right: 0;
+                       margin-bottom: 58px;
+                   }
+                   &--red::before {
+                       @include dish-sticker-change (0.56rem, 56px, -28px)
+                   }
+                   &--green::before {
+                       @include dish-sticker-change (0.56rem, 56px, -28px)
+                   }
+                   &--yellow::before {
+                       @include dish-sticker-change (0.56rem, 56px, -28px)
+                   }
+               }
+               @include screen-size(590px) {
+                   flex-direction: column;
+                   &:not(:last-child) {
+                       margin-right: 0;
+                       margin-bottom: 20px;
+                   }
+                   &--red::before {
+                       position: relative;
+                       top: 25px;
+                       left: -155px;
+                   }
+                   &--green::before {
+                       position: relative;
+                       top: 25px;
+                       left: -155px;
+                   }
+                   &--yellow::before {
+                       position: relative;
+                       top: 25px;
+                       left: -155px;
+                   }
+               }
+           }

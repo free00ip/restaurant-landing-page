@@ -1,0 +1,21 @@
+.contacts-info {
+    margin: 60px 0;
+    font-size: 1.4rem;
+    &__about {
+        font-weight: 300;
+        line-height: 50px;
+    }
+    @include screen-size(1024px) {
+        margin: 50px 0;
+        font-size: $small-font;
+        &__about {
+            line-height: 35px;
+        }
+    }
+    @include screen-size(768px) {
+        margin: 40px 0;
+        &__about {
+            line-height: 31px;
+        }
+    }
+}

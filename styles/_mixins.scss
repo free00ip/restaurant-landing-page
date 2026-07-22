@@ -1,0 +1,51 @@
+@mixin section-settings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@mixin dish-sticker {
+    color: $contrast-text-color;
+    font-size: 0.56rem;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 600;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+}
+
+@mixin dish-sticker-change ($sticker-font-size, $sticker-size, $sticker-place) {
+    font-size: $sticker-font-size;
+    line-height: $sticker-size;
+    width: $sticker-size;
+    height: $sticker-size;
+    top: $sticker-place;
+    left: $sticker-place;
+}
+
+@mixin flex-state {
+    display: flex;
+}
+
+@mixin screen-size($big-screen) {
+    @media screen and (max-width: $big-screen) {
+        @content
+    }
+    ;
+}
+
+@mixin screen-size($medium-screen) {
+    @media screen and (max-width: $medium-screen) {
+        @content
+    }
+    ;
+}
+
+@mixin screen-size($screen-size) {
+    @media screen and (max-width: $screen-size) {
+        @content
+    }
+}

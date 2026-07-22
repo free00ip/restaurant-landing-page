@@ -1,0 +1,30 @@
+.dishes-menu {
+    @include flex-state;
+    max-width: 1205px;
+    margin: 0 auto;
+    @include screen-size(1270px) {
+        max-width: 1050px;
+    }
+    @include screen-size(1120px) {
+        max-width: 970px;
+    }
+    @include screen-size(1024px) {
+        max-width: 963px;
+    }
+    @include screen-size(1010px) {
+        max-width: 870px;
+    }
+    @include screen-size(920px) {
+        max-width: 780px;
+    }
+    @include screen-size(825px) {
+        max-width: 730px;
+    }
+    @include screen-size(780px) {
+        max-width: 722px;
+    }
+    @include screen-size(768px) {
+        flex-direction: column;
+        max-width: 720px;
+    }
+}

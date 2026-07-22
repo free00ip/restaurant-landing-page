@@ -1,0 +1,22 @@
+ .intro-menu {
+     font-size: $small-font;
+     font-weight: 400;
+     &__item:not(:last-child)::after {
+         content: "";
+         display: inline-block;
+         width: 2px;
+         height: 16px;
+         margin: 0 25px;
+         vertical-align: middle;
+         background-color: $contrast-text-color;
+     }
+     @include screen-size(1024px) {
+         font-size: 0.72rem;
+         &__item:not(:last-child)::after {
+             height: 13px;
+         }
+     }
+     @include screen-size(392px) {
+         font-size: 0.6rem;
+     }
+ }

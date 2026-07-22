@@ -1,0 +1,30 @@
+.intro-main {
+    padding: 218px 0 185px;
+    &__headline {
+        max-width: 914px;
+        font-size: 3.4rem;
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+    &__about {
+        font-weight: 400;
+        margin-top: 35px;
+    }
+    @include screen-size(1024px) {
+        padding: 183px 0 153px;
+        &__headline {
+            max-width: 697px;
+            font-size: 2.4rem;
+        }
+        &__about {
+            font-size: 0.72rem;
+        }
+    }
+    @include screen-size(768px) {
+        padding: 171px 0 99px;
+        &__headline {
+            max-width: 329px;
+            font-size: 2rem;
+        }
+    }
+}

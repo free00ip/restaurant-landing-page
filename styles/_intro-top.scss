@@ -1,0 +1,29 @@
+                .intro-top {
+                    padding: 0 359px 0 372px;
+                    height: 152px;
+                    line-height: 152px;
+                    @include flex-state;
+                    justify-content: space-between;
+                    background-color: rgba(0, 0, 0, .42);
+                    text-align: left;
+                    @include screen-size(1440px) {
+                        padding: 0 118px 0 132px;
+                        @include screen-size(1024px) {
+                            padding: 0 31px 0 42px;
+                            height: 70px;
+                            line-height: 70px;
+                        }
+                        @include screen-size(768px) {
+                            padding: 0 13px 0 24px;
+                            height: 60px;
+                            line-height: 60px;
+                        }
+                        @include screen-size(565px) {
+                            height: 100px;
+                            line-height: 40px;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }

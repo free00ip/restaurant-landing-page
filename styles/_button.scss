@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    margin: 60px auto 0;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-size: $tiny-font;
+    font-weight: 600;
+    &--white {
+        color: #fff;
+    }
+    &--black {
+        color: #000;
+    }
+    &:hover {
+        background-color: #FFA60D;
+        border-color: #FFA60D;
+        color: $contrast-text-color;
+        transition-duration: 0.2s;
+    }
+    @include screen-size(1024px) {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 0.68rem;
+        &--white {
+            margin: 63px auto 0;
+        }
+        &--black {
+            margin: 45px auto 0;
+        }
+    }
+    @include screen-size(768px) {
+        &--white {
+            margin: 66px auto 0;
+        }
+    }
+}

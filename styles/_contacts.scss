@@ -1,0 +1,31 @@
+.contacts {
+    @include section-settings;
+    background-color: $bg-color-dark;
+    .contacts__headline {
+        font-size: 2.6rem;
+        color: $contrast-text-color;
+    }
+    .contacts__time {
+        color: #B1B1B1;
+    }
+    @include screen-size(1024px) {
+        padding-top: 80px;
+        padding-bottom: 78px;
+        .contacts__headline {
+            font-size: 2rem;
+        }
+        .contacts__time {
+            font-size: $tiny-font;
+        }
+    }
+    @include screen-size(768px) {
+        padding-top: 70px;
+        padding-bottom: 65px;
+        .contacts__headline {
+            font-size: 1.6rem;
+        }
+        .contacts__time {
+            font-size: 0.72rem;
+        }
+    }
+}

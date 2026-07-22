@@ -1,0 +1,25 @@
+            .about-us {
+                @include section-settings;
+                background-color: $bg-color-light;
+                &__info {
+                    max-width: 941px;
+                    margin: 0 auto;
+                    font-size: $big-font;
+                }
+                @include screen-size(1024px) {
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    &__info {
+                        max-width: 602px;
+                        font-size: $small-font;
+                    }
+                }
+                @include screen-size(768px) {
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    &__info {
+                        max-width: 541px;
+                        font-size: $tiny-font;
+                    }
+                }
+            }
