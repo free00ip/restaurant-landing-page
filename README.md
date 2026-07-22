@@ -22,7 +22,7 @@ The project uses the BEM methodology for organizing CSS classes and SASS feature
 - CSS Media Queries
 - Responsive Web Design
 
-## ✨ Features
+## 👩‍💻 Features
 
 - Fully responsive layout for desktop, tablet, and mobile devices
 - BEM-based CSS architecture
